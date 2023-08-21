@@ -1,0 +1,82 @@
+/* Generic Styling*/
+.rowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.columnFlexStyling {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* User Styling*/
+.userInfoWrapper {
+  composes: columnFlexStyling;
+  margin: 2em;
+  padding: 2em;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  flex: 1;
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+
+.userTopDiv {
+  composes: rowFlexStyling;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.userTopDiv img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 20px 8px rgba(0, 121, 255, 0.75);
+  -moz-box-shadow: 0px 4px 20px 8px rgba(0, 121, 255, 0.75);
+  box-shadow: 0px 4px 20px 8px rgba(0, 121, 255, 0.75);
+}
+
+.userTopInfoDiv,
+.userDetailsDiv {
+  composes: columnFlexStyling;
+  gap: 1em;
+}
+
+.userTopInfoDiv h1,
+.userTopInfoDiv h4 {
+  font-family: "Calistoga", cursive;
+  letter-spacing: 0.04em;
+}
+
+.userTopInfoDiv .hireableStyling {
+  color: #0079ff;
+  background-color: #b6d7ff;
+  padding: 0.25em;
+  border-radius: 5px;
+}
+
+.userTopInfoDiv p,
+.userInfoWrapper .userDetailsDiv p {
+  font-family: "Lora", serif;
+  font-size: 1em;
+}
+
+.userTopInfoDiv .joinedAtStyling span {
+  border-bottom: 2px solid #0079ff;
+  padding: 0em 0.25em;
+}
+
+.iconTextDiv {
+  composes: rowFlexStyling;
+  font-family: "Lora", serif;
+  font-size: 1em;
+  font-weight: bolder;
+  gap: 0.5em;
+}
+
+.iconColDiv {
+  composes: iconTextDiv;
+  padding-top: 0.5em;
+}

@@ -1,0 +1,35 @@
+/* Generic Styling*/
+.rowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/** component styling **/
+
+.navBarWrapper {
+  composes: rowFlexStyling;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.logoLinkStyling {
+  color: #000;
+  text-decoration: none;
+}
+
+.logo {
+  composes: rowFlexStyling;
+  gap: 1em;
+}
+
+.appName {
+  font-family: "Calistoga", cursive;
+  letter-spacing: 0.04em;
+}
+
+.navLinks {
+  composes: rowFlexStyling;
+  flex-wrap: wrap;
+}

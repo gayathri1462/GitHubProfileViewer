@@ -1,0 +1,51 @@
+.userInfoCardWrapper {
+  background-color: #fff;
+  flex: 1;
+  border-radius: 0.5em;
+  width: 80%;
+  padding: 1em;
+}
+
+.userInfoCardsDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 90%;
+}
+
+.userInfoCardDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.userInfoCardDiv img {
+  border-radius: 50%;
+  padding: 0.25em;
+  border: 1px solid #0079ff;
+}
+
+.loginStyling {
+  font-family: "Lora", serif;
+  letter-spacing: 0.03em;
+  font-size: 1em;
+}
+
+.noDataStyling {
+  color: #0079ff;
+  font-family: "Calistoga", cursive;
+  letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.loadingStyling {
+  composes: noDataStyling;
+}

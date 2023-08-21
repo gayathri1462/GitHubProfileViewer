@@ -1,0 +1,50 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hideListStyling {
+  list-style-type: none;
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+.active {
+  composes: hideListStyling;
+  background-color: #0174ff;
+}
+
+.active a {
+  color: white !important;
+  font-size: 14px !important;
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+.prev {
+  composes: hideListStyling;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: white;
+  border: 0.5px solid rgba(170, 170, 170, 0.515);
+}
+
+.pageLink {
+  composes: hideListStyling;
+}
+
+.next {
+  composes: hideListStyling;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: white;
+  border: 0.5px solid rgba(170, 170, 170, 0.515);
+}
+
+.pageItem {
+  composes: hideListStyling;
+  border: 0.5px solid rgba(170, 170, 170, 0.515);
+}

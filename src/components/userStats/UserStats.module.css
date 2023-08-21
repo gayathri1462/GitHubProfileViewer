@@ -1,0 +1,44 @@
+/* Generic Styling*/
+.cardsRowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.columnFlexStyling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* User Styling*/
+.userStatsWrapper {
+  composes: columnFlexStyling;
+  margin: 1em;
+  padding: 1em;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  flex: 1;
+}
+
+.statCardsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.statsListDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+}

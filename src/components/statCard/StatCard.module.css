@@ -1,0 +1,38 @@
+/* Generic Styling*/
+.rowFlexStyling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.columnFlexStyling {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* stat card styling*/
+
+.statCardStyling {
+  composes: rowFlexStyling;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 0.5em;
+  gap: 1em;
+  height: 10%;
+  padding: 0.5em;
+  width: 125px;
+}
+
+.iconBgStyling {
+  border-radius: 50%;
+  padding: 1em;
+}
+
+.statInfoStyling {
+  font-family: "Lora", serif;
+  text-align: center;
+}
